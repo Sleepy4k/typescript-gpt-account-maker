@@ -39,6 +39,31 @@ cp .env.example .env
 
 ---
 
+## Build (Distribusi Tanpa Install Dependency)
+
+Kompilasi semua source + dependency menjadi satu file `dist/index.js`:
+
+```bash
+bun run build
+```
+
+Output: `dist/index.js` (~5 MB, semua dependency sudah termasuk di dalamnya).
+
+Mesin target hanya membutuhkan:
+- Node.js v20+
+- Browser Playwright (satu kali: `npx playwright install chromium`)
+
+```bash
+# Jalankan hasil build
+bun run start:dist
+# atau langsung:
+node dist/index.js
+```
+
+> `dist/` sudah masuk `.gitignore`. Distribusikan folder `dist/` + file `.env` ke mesin target.
+
+---
+
 ## Konfigurasi (`.env`)
 
 ```env

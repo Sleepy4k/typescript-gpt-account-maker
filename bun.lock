@@ -8,6 +8,7 @@
         "@clack/prompts": "^1.0.1",
         "@playwright/test": "^1.58.2",
         "chromium-bidi": "^15.0.0",
+        "dotenv": "^17.3.1",
         "electron": "^40.6.0",
         "picocolors": "^1.1.1",
         "playwright": "^1.58.2",
@@ -128,6 +129,8 @@
     "detect-node": ["detect-node@2.1.0", "", {}, "sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g=="],
 
     "devtools-protocol": ["devtools-protocol@0.0.1585077", "", {}, "sha512-felwTo2l5VLTn+5mxuSDgr+2JCvcWun7H199YKV1cDhM/5IF7soujTI/VPOmlSgFSMSQGdsibjkqlyXg8uMUnQ=="],
+
+    "dotenv": ["dotenv@17.3.1", "", {}, "sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA=="],
 
     "electron": ["electron@40.6.0", "", { "dependencies": { "@electron/get": "^2.0.0", "@types/node": "^24.9.0", "extract-zip": "^2.0.1" }, "bin": { "electron": "cli.js" } }, "sha512-ett8W+yOFGDuM0vhJMamYSkrbV3LoaffzJd9GfjI96zRAxyrNqUSKqBpf/WGbQCweDxX2pkUCUfrv4wwKpsFZA=="],
 

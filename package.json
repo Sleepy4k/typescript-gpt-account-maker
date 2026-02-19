@@ -3,8 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "node --env-file=.env --import=tsx/esm src/index.ts",
-    "dev": "node --env-file=.env --watch --import=tsx/esm src/index.ts",
+    "start": "node --import=tsx/esm src/index.ts",
+    "start:dist": "node dist/index.js",
+    "dev": "node --watch --import=tsx/esm src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target=node --format=esm",
+    "build:binary": "bun build src/index.ts --compile --outfile dist/gpt-automation",
     "install:browser": "playwright install chromium"
   },
   "devDependencies": {
@@ -19,6 +22,7 @@
     "@clack/prompts": "^1.0.1",
     "@playwright/test": "^1.58.2",
     "chromium-bidi": "^15.0.0",
+    "dotenv": "^17.3.1",
     "electron": "^40.6.0",
     "picocolors": "^1.1.1",
     "playwright": "^1.58.2"
