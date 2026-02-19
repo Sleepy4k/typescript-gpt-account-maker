@@ -1,3 +1,4 @@
+import "dotenv/config";
 import * as clack from "@clack/prompts";
 import pc from "picocolors";
 import { loadConfig } from "./config/index.ts";
